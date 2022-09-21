@@ -12,7 +12,7 @@ on:
       gapps_variant:
         description: 'Variants of gapps. Should be: [none, aroma, super, stock, full, mini, micro, nano, pico, tvstock, tvmini]'
         required: true
-        default: 'none'
+        default: 'pico'
 
 jobs:
   build:
