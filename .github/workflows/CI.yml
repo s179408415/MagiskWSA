@@ -136,11 +136,11 @@ jobs:
           e2fsck -yf ${{ matrix.arch }}/product.img
           resize2fs ${{ matrix.arch }}/product.img 1024M
           e2fsck -yf ${{ matrix.arch }}/system_ext.img
-          resize2fs ${{ matrix.arch }}/system_ext.img 108M
+          resize2fs ${{ matrix.arch }}/system_ext.img 128M
       - name: Expand vendor
         run: |
           e2fsck -yf ${{ matrix.arch }}/vendor.img
-          resize2fs ${{ matrix.arch }}/vendor.img 320M
+          resize2fs ${{ matrix.arch }}/vendor.img 330M
       - name: Mount images
         run: |
           sudo mkdir system
